@@ -11,29 +11,29 @@
 8) Catalog is finished
 
 
-Retreiving murine genomes from our samples
+Retreiving murine genomes from our samples 
 ==========================================
 
-Taking taxonomy.tsv from all our 16S sequencing results (4 murine experiments).
-Condensing genus-level results to 150 genera.
-Finding relevant species in these genera.
+Taking taxonomy.tsv from all our 16S sequencing results (4 murine experiments). 
+Condensing genus-level results to 150 genera. 
+Finding relevant species in these genera. 
 
-Looking into MGBC, CMMG, UHGG, NCBI; and finding 3 reference genomes of each species into a list of 778 genomes.
-XXX CMMG files were transformed from .gXXX into .fna via XXX script.
+Looking into MGBC, CMMG, UHGG, NCBI; and finding 3 reference genomes of each species into a list of 778 genomes. 
+XXX CMMG files were transformed from .gff.gz into .fna.gz via GFFintoFASTAv06.ipynb script. 
 
-Creating metabolic models via gapseq
+Creating metabolic models via gapseq 
 ====================================
-Using gapseq 1.2 XXX for metabolic reconstruction and gapfilling of 778 genomes, with 774 genomes being successfully modeled.
-gapseq doall
+Using gapseq 1.2 XXX for metabolic reconstruction and gapfilling of 778 genomes, with 774 genomes being successfully modeled. 
+gapseq doall 
 
 Combining to McMurGut 1.1
 =========================
-Using Qiime2's export tool to combine 774 models, saved as .XML-files, into one model catalog, on all taxonomy levels.
-mcmurgut_1_1_genus.qza XXX
-mcmurgut_1_1_family.qza XXX
+Using Qiime2's export tool to combine 774 models, saved as .XML-files, into one model catalog, on all taxonomy levels. 
+mcmurgut_1_1_genus.qza XXX 
+mcmurgut_1_1_family.qza XXX 
 
 
-Creating diet file based on McMurGut 
+Creating diet file based on McMurGut  
 ====================================
 
-Mcmurgut_1_1_genus was taken for Micom's medium completion tool.
+Mcmurgut_1_1_genus was taken for Micom's medium completion tool. 
