@@ -37,3 +37,5 @@ Creating diet file based on McMurGut
 ====================================
 
 Mcmurgut_1_1_genus was taken for Micom's medium completion tool. 
+
+
