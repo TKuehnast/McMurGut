@@ -15,8 +15,7 @@ Retreiving murine genomes from our samples
 ==========================================
 
 Taking taxonomy.tsv from all our 16S sequencing results (4 murine experiments).  
-Condensing genus-level results to 150 genera.  
-Finding relevant species in these genera.  
+Condensing taxonomy to 150 genera.  
   
 Looking into MGBC, CMMG, UHGG, NCBI; and finding 3 reference genomes of each species into a list of 778 genomes.  
 XXX CMMG files were transformed from .gff.gz into .fna.gz via GFFintoFASTAv06.ipynb script.  
