@@ -25,7 +25,7 @@ Using gapseq 1.2 for metabolic reconstruction and gapfilling of 754 genomes.
 gapseq doall  
 gapseq version: 1.2; Sequence DB md5sum: 17e92c9 (2023-12-12, Bacteria) (04.2024)
 
-Old versions (gapseq 1.2 ccd1144, 2022) used for 3/754 genomes: GCA_001458695.1_NiCh1_genomic, GCA_009829925.1_ASM982992v1_genomic and GCA_022179725.1_ASM2217972v1_genomic.
+Old version (gapseq 1.2 ccd1144, 2022) used for 1/754 genomes: GCA_022179725.1_ASM2217972v1_genomic.
 
 Combining to McMurGut 1.1
 =========================
