@@ -43,7 +43,7 @@ A skeleton medium was created, based on... (gapseq_gut_medium_modifytossniff_v06
 - ssniff chow composition chart
 - theoretical mouse gut components, such as water, mucin, urea, murine bile acids
 - Micom's complete_db_medium (Micom 0.35.0 in Qiime2-amplicon-2024.2), with target doubling time of 0.1 (every ~7h), maximum flux input of 10 mmol/hour, aiming to enable growth of genera in McMurGut 1.1. 132 of 134 genera were growing (check_db_medium). See create_medium_v11.ipynb.
-Oxygen and toxic substances were excluded from the completion step. "cpd00007", "cpd00007", "cpd00055", "cpd00071", "cpd00025", "cpd00239", "cpd00075", "cpd00116", "cpd00150"
+Oxygen and toxic substances, which were automatically added in a first completion step, were excluded in a second run ("cpd00007", "cpd00007", "cpd00055", "cpd00071", "cpd00025", "cpd00239", "cpd00075", "cpd00116", "cpd00150").
 
 
 The constructed media/diet file ssniff_MCMG754_v02_diet.qza was used in all upcoming mouse gut microbiome simulations.
