@@ -39,7 +39,13 @@ MCMG754_order.qza
 
 Creating diet file based on McMurGut  
 ====================================
+A skeleton medium was created, based on... (gapseq_gut_medium_modifytossniff_v06.xlsx)
+- ssniff chow composition chart
+- theoretical mouse gut components, such as water, mucin, urea, murine bile acids
+- Micom's complete_db_medium (Micom 0.35.0 in Qiime2-amplicon-2024.2), with target doubling time of 0.1 (every ~7h), maximum flux input of 10 mmol/hour, aiming to enable growth of genera in McMurGut 1.1. 132 of 134 genera were growing (check_db_medium). See create_medium_v11.ipynb.
 
-MCMG754_genus.qza was taken for Micom's medium completion tool. 
+The constructed media/diet file ssniff_MCMG754_v02_diet.qza was used in all upcoming mouse gut microbiome simulations.
+
+
 
 
