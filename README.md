@@ -1,7 +1,7 @@
 # McMurGut 1.1 (MCMG754) - Metabolic reconstruction catalog of the murine gut  
 **The McMurGut pipeline to create your individual model catalog**  
 
-Retreiving murine genomes from our samples  
+# 1) Retreiving murine genomes from our samples  
 ==========================================
 
 16S rRNA gene amplicon sequencing of mouse feces. Using Qiime2 to receive taxonomy.tsv from all our 16S sequencing results (4 murine experiments). Collapsing to genera only. Remove non_taxonomic entries.  
