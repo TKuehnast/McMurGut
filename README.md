@@ -43,7 +43,7 @@ gapseq_gut_medium_modifytossniff_v06.xlsx
 After complete_db_medium (Micom 0.35.0):  
 ssniff_MCMG754_v02_diet.qza  
 
-## 5) Using McMurGut in Micom (0.35.0)
+## 5) Using McMurGut in Micom
 ====================================
 
-Integrate MCMG754_genus.qza and ssniff_MCMG754_v02_diet.qza in Micom simulation.  
+Integrate MCMG754_genus.qza and ssniff_MCMG754_v02_diet.qza in Micom simulation (0.35.0).  
