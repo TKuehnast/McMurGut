@@ -44,6 +44,5 @@ After complete_db_medium (Micom 0.35.0):
 ssniff_MCMG754_v02_diet.qza  
 
 ## 5) Using McMurGut in Micom
-====================================
 
 Integrate MCMG754_genus.qza and ssniff_MCMG754_v02_diet.qza in Micom simulation (0.35.0).  
