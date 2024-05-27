@@ -1,4 +1,4 @@
-# McMurGut - Metabolic reconstruction catalog of the murine gut
+# McMurGut 1.1 (MCMG754) - Metabolic reconstruction catalog of the murine gut
 **The McMurGut pipeline to create your individual model catalog**
 
 1) Take sequencing data from your microbiome same, such as 16S data via QIIME2, or WGS data via Kraken/Bracken, and create a taxonomy file
@@ -14,7 +14,7 @@
 Retreiving murine genomes from our samples 
 ==========================================
 
-Taking taxonomy.tsv from all our 16S sequencing results (4 murine experiments). Collapse to genera only. Remove non_taxonomic entries.
+16S rRNA gene amplicon sequencing of mouse feces. Taking taxonomy.tsv from all our 16S sequencing results (4 murine experiments). Collapse to genera only. Remove non_taxonomic entries.
  
 Looking into MGBC, CMMG, UHGG and NCBI (in this order); and finding (if available) 3 reference genomes (according to good sequence quality if available) of each species present in this genus, into a list of 754 genomes.  
 Genomes were compressed to .fna.gz format. CMMG genomes were transformed from .gff.gz into .fna.gz via GFFintoFASTAv06.ipynb script.  
@@ -48,6 +48,7 @@ Oxygen and toxic substances, which were automatically added in a first completio
 
 The constructed media/diet file ssniff_MCMG754_v02_diet.qza was used in all upcoming mouse gut microbiome simulations.
 
+Using McMurGut in Micom
+====================================
 
-
-
+Integrate McMurGut_genus.qza and ssniff_MCMG754_v02_diet.qza into your Micom simulation.
