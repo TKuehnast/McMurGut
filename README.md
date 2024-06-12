@@ -1,28 +1,32 @@
-# McMurGut 1.1 (MCMG754) - Metabolic reconstruction catalog of the murine gut  
-**The McMurGut pipeline to create your individual model catalog**  
+# McMurGut 1.1 (MCMG754) - Metabolic environment and model catalog of the murine gut  
+**The McMurGut pipeline to create your individual model catalog and diet file to simulate the mouse microbiome**  
 
 ## 1) Retreiving murine genomes from our samples  
 
-16S rRNA gene amplicon sequencing of mouse feces. Using Qiime2 to receive taxonomy.tsv from all our 16S sequencing results (4 murine experiments). Collapsing to genera only. Remove non_taxonomic entries.  
- 
-Looking into the genome catalogs MGBC, CMMG, UHGG and NCBI (in this order); and finding (if available) 3 reference genomes (according to good sequence quality if available) of each species present in this genus, into a list of 754 genomes.  
-Genomes were collected and compressed into .fna.gz format. CMMG genomes were transformed from .gff.gz into .fna.gz via GFFintoFASTAv06.ipynb script.  
-Manifest-table was generated, containing metadata and directory of genomes.  
-
+- Perform 16S rRNA gene amplicon sequencing on mouse feces, followed by Qiime2 taxonomy analysis (https://github.com/qiime2) to receive taxonomy file and abundance table.
+- Alternatively, perform whole genome sequencing of mouse feces, followed by applying Kraken2(https://github.com/DerrickWood/kraken2)/Bracken(https://github.com/jenniferlu717/Bracken) to receive Bracken output. Transform it to mpa-like style via kreport2mpa.py (https://github.com/jenniferlu717/KrakenTools). Modify it to taxonomy file and abundance table via kr_to_Micom_v08.ipynb.
+- Remove non_taxonomic entries from taxonomy file.
+- Search genome catalogs such as MGBC, CMMG, UHGG and NCBI for (if available) 3 reference genomes for each species present in each genus
+- Collect the genomes and compressed to .fna.gz format. CMMG genomes may be transformed from .gff.gz into .fna.gz via GFFintoFASTAv06.ipynb.
 
 ## 2) Creating metabolic models via gapseq  
 
-Using gapseq 1.2 for metabolic reconstruction and gapfilling of 754 genomes.  
-gapseq doall  
-gapseq version: 1.2; Sequence DB md5sum: 17e92c9 (2023-12-12, Bacteria) (04.2024)  
+Use gapseq 1.2 for metabolic reconstruction and gapfilling of the genomes (https://github.com/jotech/gapseq)  
+> gapseq doall
 
-Old version (gapseq 1.2 ccd1144, 2022) used for 1/754 genomes: GCA_022179725.1_ASM2217972v1_genomic.  
+McMurGut 1.1:
+Version: 1.2; Sequence DB md5sum: 17e92c9 (2023-12-12, Bacteria) (04.2024) for 753/754 genomes.
+Version: 1.2 ccd1144, 2022,  used for 1/754 genomes: GCA_022179725.1_ASM2217972v1_genomic.  
 
-Collecting .XML-files.  
+Collect .XML-files.  
+Create a manifest file containing all XML files.
 
 ## 3) Combining to McMurGut 1.1  
 
-Using Qiime2's export tool to combine 754 models.XML, into a single model catalog, on all taxonomy levels.  
+Use Qiime2's export tool to combine XML models into a single model catalog, on all taxonomy levels.  
+
+McMurGut 1.1: 
+754 models.XML, creating...  
 MCMG754_species.qza  
 MCMG754_genus.qza  
 MCMG754_family.qza  
