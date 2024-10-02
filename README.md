@@ -61,7 +61,8 @@ ssniff_MCMG754_v02_diet.qza
 
 Collapse taxonomy from taxonomy file to genus level (Collapse_csvs_vGH01.ipynb)
 
-## 6) Using McMurGut in Micom
+## 6) Using McMurGut in Micom  
+(https://github.com/micom-dev)   
 
 ### Prepare taxonomy/abundance file for Micom 
 merge_tas_tfb_micom_vGH01.ipynb  
